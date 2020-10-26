@@ -27,8 +27,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
     source ~/.bash_profile
     source ~/.bash_aliases
     source ~/.inputrc
-    source ~/.tmux.conf
-    source ~/.vimrc
 fi
 
 if [[ "$(uname)" == "Linux" ]]; then
@@ -40,7 +38,4 @@ if [[ "$(uname)" == "Linux" ]]; then
     ln -s ~/dotfiles/.vimrc ~/.vimrc
     source ~/.bash_aliases
     source ~/.inputrc
-    source ~/.tmux.conf
-    source ~/.tmux.remote.conf
-    source ~/.vimrc
 fi
