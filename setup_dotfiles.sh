@@ -21,7 +21,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
     ln -s ~/dotfiles/.inputrc ~/.inputrc
     ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
-    ln -s ~/dotfiles/.vim/ ~/.vim/
+    ln -s ~/dotfiles/.vim/ ~
     ln -s ~/dotfiles/.vimrc ~/.vimrc
     source ~/.bashrc
     source ~/.bash_profile
@@ -36,7 +36,7 @@ if [[ "$(uname)" == "Linux" ]]; then
     ln -s ~/dotfiles/.inputrc ~/.inputrc
     ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/.tmux.remote.conf ~/.tmux.remote.conf
-    ln -s ~/dotfiles/.vim/ ~/.vim/
+    ln -s ~/dotfiles/.vim/ ~
     ln -s ~/dotfiles/.vimrc ~/.vimrc
     source ~/.bash_aliases
     source ~/.inputrc
