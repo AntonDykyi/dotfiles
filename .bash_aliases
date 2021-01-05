@@ -7,7 +7,7 @@ alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FRXc'                     # Preferred 'less' implementation
-cd () { builtin cd "$@" || exit; ll; }              # Always list directory contents upon 'cd'
+cd () { builtin cd "$@" || return; ll; }      # Always list directory contents upon 'cd'
 alias c="clear"                             # Clear up the screen 
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
@@ -22,8 +22,9 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 alias show_options='shopt'                  # Show_options: display bash options settings
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
-mcd () { mkdir -p "$1" && cd "$1" || exit; }        # mcd:          Makes new Dir and jumps inside
+mcd () { mkdir -p "$1" && cd "$1" || return; }        # mcd:          Makes new Dir and jumps inside
 alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden files in current dir
+alias python='python3'
 
 # Mac-specific aliases
 #   ---------------------------------------------------------

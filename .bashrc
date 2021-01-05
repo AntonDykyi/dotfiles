@@ -20,6 +20,8 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
+cd ~
+
 #   The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/antond/google-cloud-sdk/path.bash.inc' ]; then . '/Users/antond/google-cloud-sdk/path.bash.inc'; fi
 
